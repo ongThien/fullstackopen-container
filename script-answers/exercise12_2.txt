@@ -1,0 +1,19 @@
+Script started on 2025-01-17 00:39:18+07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="92" LINES="32"]
+]0;thomas@fedora:~/Documents/fso/part12]777;notify;Command completed;exit\]777;precmd\]7;file://fedora/home/thomas/Documents/fso/part12\[?2004h]0;thomas@fedora: ~/Documents/fso/part12[01;32mthomas@fedora[00m:[01;34m~/Documents/fso/part12[00m$ exitsudo systemctl status dockerdocker -v[Ksudo service docker startystemctl start docker[10Pdocker run --helpcontainer run -it ubuntu bash
+[?2004l]133;C\]777;preexec\Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2Kde44b265507a: Pulling fs layer [1B[1A[2Kde44b265507a: Downloading  310.6kB/29.75MB[1B[1A[2Kde44b265507a: Downloading  1.219MB/29.75MB[1B[1A[2Kde44b265507a: Downloading  3.377MB/29.75MB[1B[1A[2Kde44b265507a: Downloading  4.922MB/29.75MB[1B[1A[2Kde44b265507a: Downloading  8.653MB/29.75MB[1B[1A[2Kde44b265507a: Downloading  10.18MB/29.75MB[1B[1A[2Kde44b265507a: Downloading  13.59MB/29.75MB[1B[1A[2Kde44b265507a: Downloading  15.13MB/29.75MB[1B[1A[2Kde44b265507a: Downloading  15.75MB/29.75MB[1B[1A[2Kde44b265507a: Downloading  19.18MB/29.75MB[1B[1A[2Kde44b265507a: Downloading  21.34MB/29.75MB[1B[1A[2Kde44b265507a: Downloading  22.89MB/29.75MB[1B[1A[2Kde44b265507a: Downloading  27.53MB/29.75MB[1B[1A[2Kde44b265507a: Downloading  29.69MB/29.75MB[1B[1A[2Kde44b265507a: Verifying Checksum [1B[1A[2Kde44b265507a: Download complete [1B[1A[2Kde44b265507a: Extracting  327.7kB/29.75MB[1B[1A[2Kde44b265507a: Extracting  6.226MB/29.75MB[1B[1A[2Kde44b265507a: Extracting  8.192MB/29.75MB[1B[1A[2Kde44b265507a: Extracting  10.49MB/29.75MB[1B[1A[2Kde44b265507a: Extracting  17.69MB/29.75MB[1B[1A[2Kde44b265507a: Extracting  24.25MB/29.75MB[1B[1A[2Kde44b265507a: Extracting  25.56MB/29.75MB[1B[1A[2Kde44b265507a: Extracting  27.85MB/29.75MB[1B[1A[2Kde44b265507a: Extracting  28.84MB/29.75MB[1B[1A[2Kde44b265507a: Extracting  29.49MB/29.75MB[1B[1A[2Kde44b265507a: Extracting  29.75MB/29.75MB[1B[1A[2Kde44b265507a: Pull complete [1BDigest: sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@82913b6837ba: /root@82913b6837ba:/# ls
+[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib64[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmedia[0m  [01;34mopt[0m  [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
+[?2004h]0;root@82913b6837ba: /root@82913b6837ba:/# mkdri  ir /usr/src/app
+[?2004l[?2004h]0;root@82913b6837ba: /root@82913b6837ba:/# cd /usr/src/app/
+[?2004l[?2004h]0;root@82913b6837ba: /usr/src/approot@82913b6837ba:/usr/src/app# touch index.js
+[?2004l[?2004h]0;root@82913b6837ba: /usr/src/approot@82913b6837ba:/usr/src/app# exit
+[?2004lexit
+]0;thomas@fedora:~/Documents/fso/part12]777;notify;Command completed;docker container run -it ubuntu bash\]777;precmd\]7;file://fedora/home/thomas/Documents/fso/part12\[?2004h]0;thomas@fedora: ~/Documents/fso/part12[01;32mthomas@fedora[00m:[01;34m~/Documents/fso/part12[00m$ exit
+[?2004l]133;C\]777;preexec\exit
+
+Script done on 2025-01-17 00:40:15+07:00 [COMMAND_EXIT_CODE="0"]
