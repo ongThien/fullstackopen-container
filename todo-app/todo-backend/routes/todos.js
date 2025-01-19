@@ -1,6 +1,9 @@
 const express = require('express');
+const redis = require('../redis');
 const { Todo } = require('../mongo')
 const router = express.Router();
+
+const { ADDED_TODOS_KEY } = require('../util/constants');
 
 /* GET todos listing. */
 router.get('/', async (_, res) => {
@@ -16,6 +19,11 @@ router.post('/', async (req, res) => {
     text: req.body.text,
     done: false
   })
+
+  const currentCount = await redis.getAsync(ADDED_TODOS_KEY);
+  const newCount = currentCount ? +currentCount + 1 : 1;
+  await redis.setAsync(ADDED_TODOS_KEY, newCount);
+
   res.send(todo);
 });
 
@@ -31,7 +39,15 @@ const findByIdMiddleware = async (req, res, next) => {
 
 /* DELETE todo. */
 singleRouter.delete('/', async (req, res) => {
-  await req.todo.delete()
+  await req.todo.delete();
+
+  const currentCount = await redis.getAsync(ADDED_TODOS_KEY);
+
+  if (!currentCount || +currentCount === 0) return res.sendStatus(400);
+
+  const newCount = +currentCount - 1;
+  await redis.setAsync(ADDED_TODOS_KEY, newCount);
+
   res.sendStatus(200);
 });
 
